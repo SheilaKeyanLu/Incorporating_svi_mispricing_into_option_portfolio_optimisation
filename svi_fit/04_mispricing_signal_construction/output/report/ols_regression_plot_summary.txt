@@ -1,0 +1,9 @@
+OLS persistence plot summary
+============================
+
+Processed input file: data\processed\option_quotes_with_mispricing_signal.csv
+Adjacent contract-day pairs: 323,505
+OLS slope: 0.781597
+OLS intercept: -0.008061
+R-squared: 0.585953
+p-value: 0.000000e+00
