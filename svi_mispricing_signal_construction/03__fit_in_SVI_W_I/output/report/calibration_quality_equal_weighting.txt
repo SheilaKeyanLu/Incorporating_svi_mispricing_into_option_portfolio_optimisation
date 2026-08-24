@@ -1,0 +1,10 @@
+Equal-weighted SVI calibration quality
+======================================
+
+N counts all fitted slices attempted for each underlying.
+Stability margin pass rate and RMSE are calculated over successful fits.
+
+SSE 50: N=13,373, successful fits=13,357, stability margin pass rate=78.81%, median RMSE=1.498429e-04
+CSI 300: N=15,562, successful fits=15,560, stability margin pass rate=86.07%, median RMSE=1.088655e-04
+CSI 1000: N=15,536, successful fits=15,536, stability margin pass rate=87.08%, median RMSE=1.373704e-04
+Overall: N=44,471, successful fits=44,453, stability margin pass rate=84.24%, median RMSE=1.306898e-04

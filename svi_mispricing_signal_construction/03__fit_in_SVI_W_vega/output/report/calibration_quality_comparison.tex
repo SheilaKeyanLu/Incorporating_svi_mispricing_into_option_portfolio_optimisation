@@ -1,0 +1,53 @@
+\begin{table}[htbp]
+\centering
+\caption{Calibration quality comparison across weighting schemes}
+\label{tab:calibration}
+\renewcommand{\arraystretch}{1.2}
+\resizebox{0.98\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+& & \multicolumn{2}{c}{Equal Weighting ($W=I$)}
+& \multicolumn{2}{c}{Vega Weighting} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+Underlying & $N$ &Stab. margin pass rate & RMSE (median)
+& Stab. margin pass Rate & RMSE (median) \\
+\midrule
+SSE 50
+& 13,373
+& 78.81%
+& $1.50\times10^{-4}$
+& 93.56%
+& $1.38\times10^{-4}$ \\
+
+CSI 300
+& 15,562
+& 86.07%
+& $1.09\times10^{-4}$
+& 97.30%
+& $1.02\times10^{-4}$ \\
+
+CSI 1000
+& 15,536
+& 87.08%
+& $1.37\times10^{-4}$
+& 94.75%
+& $1.34\times10^{-4}$ \\
+
+\textbf{Overall}
+& \textbf{44,471}
+& \textbf{84.24%}
+& $1.31\times10^{-4}$
+& \textbf{95.28%}
+& $1.23\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+}
+\begin{minipage}{0.98\textwidth}
+\footnotesize
+\vspace{0.6em}
+\setstretch{1.1}
+\footnotetext{
+\textit{Note:} Stab. margin pass rate refers to the proportion of normal fitted slices with a nonpositive stability margin, i.e., slices whose fitted surface does not exhibit the branch-intersection distortion described in this section.}
+\vspace{0.4em}
+\end{minipage}
+\end{table}

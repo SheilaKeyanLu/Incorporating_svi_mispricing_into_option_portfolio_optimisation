@@ -1,0 +1,13 @@
+PCP discount-factor estimation summary
+======================================
+
+Source quote file: data\raw\option_quotes_with_basic_and_underlying.csv
+Regression file: data\intermediate\_option_groups_pcp_regression.csv
+Processed output: data\processed\option_quotes_with_discount_factor.csv
+
+Quote rows written: 3,560,160
+Rows matched with PCP estimates: 2,077,426
+Row match rate: 58.35%
+Distinct regression groups used: 45,056
+
+Added columns: beta_K, beta_S, r_reg, delta_reg.

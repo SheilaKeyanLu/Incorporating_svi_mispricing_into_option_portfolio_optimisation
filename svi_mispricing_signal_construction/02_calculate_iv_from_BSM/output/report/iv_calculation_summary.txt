@@ -1,0 +1,13 @@
+Black-Scholes implied-volatility calculation summary
+=====================================================
+
+Clean input file: data\intermediate\_option_quotes_clean_for_iv.csv
+Processed output: data\processed\option_quotes_with_iv.csv
+
+Clean input rows: 1,894,957
+Strike groups processed: 960,465
+Output rows written: 1,894,957
+Rows with finite implied volatility: 1,889,850
+Finite implied-volatility rate: 99.73%
+
+Added columns: F, implied_volatility.
