@@ -36,6 +36,30 @@ Place the following files in `data/raw/`:
 
 The quote file is the processed output of the Vega-weighted SVI project. The trading calendar is retained as a raw project input for downstream date-aware diagnostics, although the OLS persistence plot does not require manual date selection.
 
+## Large Data Files
+
+The SVI-based-IV input and the full mispricing-signal output are too large to be stored directly in GitHub. Download the required file(s) from the OneDrive data folder:
+
+<https://uoe-my.sharepoint.com/:f:/r/personal/s2293742_ed_ac_uk/Documents/dissertation_data?d=w657142e6c42245a1a7e32e45261a4e58&csf=1&web=1&e=LEVp8o>
+
+To run this project from its own starting point, place:
+
+```text
+svi_mispricing_signal_construction/04_mispricing_signal_construction/data/raw/option_quotes_with_svi_based_iv.csv
+```
+
+This is the same file as:
+
+```text
+svi_mispricing_signal_construction/03__fit_in_SVI_W_vega/data/processed/option_quotes_with_svi_based_iv.csv
+```
+
+If you want to skip signal construction and use the processed output directly for downstream analysis, place:
+
+```text
+svi_mispricing_signal_construction/04_mispricing_signal_construction/data/processed/option_quotes_with_mispricing_signal.csv
+```
+
 ## Run Order
 
 Run the main analysis script first:
@@ -78,4 +102,3 @@ Figures are saved in `output/figures/`:
 - `data/processed/option_quotes_with_mispricing_signal.csv`
 
 It constructs adjacent daily signal pairs directly from the processed data and generates the OLS persistence plot. No manually entered regression coefficient, date range, or contract symbol is required.
-

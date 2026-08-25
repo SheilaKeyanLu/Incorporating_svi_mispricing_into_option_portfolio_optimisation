@@ -41,6 +41,30 @@ The comparison script also requires the sibling project output:
 
 - `../03__fit_in_SVI_W_I/data/processed/svi_fit_equal_weighting.csv`
 
+## Large Data Files
+
+The full IV input and SVI-based-IV output are too large to be stored directly in GitHub. Download the required file(s) from the OneDrive data folder:
+
+<https://uoe-my.sharepoint.com/:f:/r/personal/s2293742_ed_ac_uk/Documents/dissertation_data?d=w657142e6c42245a1a7e32e45261a4e58&csf=1&web=1&e=LEVp8o>
+
+To run the Vega-weighted SVI calibration from its own starting point, place:
+
+```text
+svi_mispricing_signal_construction/03__fit_in_SVI_W_vega/data/raw/option_quotes_with_iv.csv
+```
+
+This is the same file as:
+
+```text
+svi_mispricing_signal_construction/02_calculate_iv_from_BSM/data/processed/option_quotes_with_iv.csv
+```
+
+If you want to skip the full SVI recalibration and start from the processed SVI-based-IV dataset, place:
+
+```text
+svi_mispricing_signal_construction/03__fit_in_SVI_W_vega/data/processed/option_quotes_with_svi_based_iv.csv
+```
+
 ## Run Order
 
 First run the equal-weighting project. Then run the Vega-weighting analysis scripts from this project root:
@@ -108,4 +132,3 @@ It writes one selected total-variance SVI slice.
 - `data/intermediate/_svi_fit.csv`
 
 It writes the normal-versus-anomalous SVI fit comparison figure.
-
